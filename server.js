@@ -2,7 +2,9 @@
 const path=require('path')
 console.log('my first app express with node js')
 //import express 
-const express=require('express')
+const express=require('express');
+const { StringDecoder } = require('string_decoder');
+const { mainModule } = require('process');
 // app is an express () instance : associate express methods to a variable
 const app=express();
 
@@ -31,3 +33,16 @@ const port=5000
 app.listen(port,(err)=>{
      err? console.log(err) : console.log('server is running on port 5000')
 })
+
+#include <stdio.h>
+int main() {
+
+    int n;
+    scanf("%d", n);
+    int fac = 1;
+    for(int i=0;i<=n;i++)
+        fac *= i;
+
+    printf("%d", fac);
+    return 0;
+}
